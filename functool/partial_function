@@ -1,0 +1,10 @@
+Partial functions allow us to fix a certain number of arguments of a function and generate a new function.
+
+example:-
+from functools import partial
+def multiply(x,y):
+        return x * y+1
+
+# create a new function that multiplies by 2
+dbl = partial(multiply,2)
+print(dbl(4))
