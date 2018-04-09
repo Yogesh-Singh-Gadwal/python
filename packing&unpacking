@@ -1,0 +1,77 @@
+/***********************************unpacking*****************************************/
+
+unpacking-python provide a functionality to pass the the list of values in a function where all the value of function will be
+           considered as indivisual argument.
+           
+          example:- consider a function is there which gets 4 argument then we can pass the list of 4 values in that functin then all
+               value of list will be considered as indivisual argument.
+          
+          ex:-
+        example1;   
+          #defining dunction
+          def abc(a,b,c,d):
+                   print(a,b,c,d)
+                   
+          list1=[10,20,30,40]        #list initialization
+          
+          abc(*list1)                 #calling function
+          
+          example2;
+                range(3, 6)  # normal call with separate arguments
+                [3, 4, 5]
+                args = [3, 6]
+                range(*args)  # call with arguments unpacked from a list
+                [3, 4, 5]
+           
+          example3;
+                # A sample program to demonstrate unpacking of
+                # dictionary items using **
+                def fun(a, b, c):
+                print(a, b, c)
+ 
+                # A call with unpacking of dictionary
+                d = {'a':2, 'b':4, 'c':10}
+                fun(**d)
+                
+                
+ node:-if we simply pass the list without "*" than type error will occur because it will be treat as a variable only
+       (in case of list=> *)
+       (in case of dict=> **)
+       
+       
+       
+/***********************************packing************************************************/
+
+unpacking:-sometime when we don't know how many arguments should be passed to the function in that case we can use packing to pack
+           all the argument in touple.
+      
+        note: by the facility of unpcking we can pass as many argument as we want to pass at the time of calling.
+        
+       example1:-
+              def mysum(*arg1):
+                    sum=0
+                    for i in range(0,len(arg1)):
+                          sum=sum+i;
+                     return sum;
+              # Driver code
+              print(mySum(1, 2, 3, 4, 5))             #output=15
+              print(mySum(10, 20))                    #output=30
+              
+              
+        example2;
+                # A Python program to demonstrate packing of
+                # dictionary items using **
+                def fun(**kwargs):
+ 
+                # kwargs is a dict
+                print(type(kwargs))
+ 
+                # Printing dictionary items
+                for key in kwargs:
+                      print("%s = %s" % (key, kwargs[key]))
+ 
+                # Driver code
+                fun(name="geeks", ID="101", language="Python")
+              
+              
+              
