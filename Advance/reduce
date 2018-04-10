@@ -1,0 +1,7 @@
+Reduce is a function provided by "functools" package with help of which we can process the wole list or touple in line and can give
+just one result of all the values.
+
+example;
+  import functools;
+  lis=[10,20,3040,50,60,70,80,90,100]
+  print(functools.reduce(lambda a,b:a+b,lis))         #output=550
