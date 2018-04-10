@@ -1,0 +1,10 @@
+accumulate is a function provided by the "Itertools" package by which we can update the whole list by any process like addition or
+multiplication etc,and the last value of the list will give the the complete processed value
+
+example:-
+import itertools
+lis=[10,20,30,40,50,60,70,80,90,100]
+print(list(itertools.accumulate(lis,lambda a,b:a+b)))
+
+
+output: [10,30,60,100,150,,210,280,360,450,550]
