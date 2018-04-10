@@ -44,8 +44,9 @@ unpacking-python provide a functionality to pass the the list of values in a fun
 
 unpacking:-sometime when we don't know how many arguments should be passed to the function in that case we can use packing to pack
            all the argument in touple.
+           this is also called variable argument passing.
       
-        note: by the facility of unpcking we can pass as many argument as we want to pass at the time of calling.
+       note: by the facility of unpcking we can pass as many argument as we want to pass at the time of calling.
         
        example1:-
               def mysum(*arg1):
@@ -75,3 +76,8 @@ unpacking:-sometime when we don't know how many arguments should be passed to th
               
               
               
+        example3;
+                def func(*argv):
+                     for i in argv:
+                     print(i)
+                func("nak","warsi","mihir","chitnis",10)
