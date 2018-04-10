@@ -1,0 +1,21 @@
+LAMBDA:-Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime,
+        using a construct called "lambda".
+        
+        example:
+          import functools
+          list1=[10,20,30,40,50,60,70,80,90,100]
+          print(functools.reduce(lambda a,b:a+b,list1))
+          
+          output:-550
+          
+     
+Operator:-operator works exactly like lambda function and it also increases the readability of the code  but for this we have to
+          import one more package named "operator".
+          
+          examples;
+          import operator
+          list1=[10,20,30,40,50,60,70,80,90,100]
+          print(functools.reduce(operator.add,list1))
+          
+          
+          output:-550
