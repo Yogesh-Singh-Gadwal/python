@@ -1,0 +1,16 @@
+in python tamplate class allow us to creat simplified syntax for output specification.
+
+
+example:-
+        from tring inport Tamplate
+        t=Tamplate("my name is $name i live in $address")
+        print(t.substitute({'name':'naushad warsi','address':"pune"}))
+        
+        
+        
+example2:-
+          from string import Template
+          student=[('nak',1),('mihir',20),('tahir',30)]
+          t=Template('i am $name my roll number $roll')
+          for i in student:
+                  print(t.substitute(name=i[0],roll=i[1]))
