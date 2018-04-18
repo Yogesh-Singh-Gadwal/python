@@ -1,0 +1,26 @@
+Filter:- filter function works exactly like map but in this the function we provide it must return boolean value, with the help of
+         this boolean functionality we can filter our given data set(iterators).
+         
+         in simple word thi filter method filters the iterator with help of given function which check for every value whether it is
+         true or false.
+         
+         syntax:-  
+                  filter(funtion, iterators,.....)
+                  
+    
+example 1):-
+              def filereven(a):
+                        if a%2==0:
+                            return true
+                        else:
+                            return false
+               
+               list1=[1,2,3,4,5,6,7,8,9,10]
+               result=filter(filtereven,list1)
+               print(result)                    
+                                        output=>[2,,4,6,8,10]
+                                        
+                                        
+                                        
+                       
+  
