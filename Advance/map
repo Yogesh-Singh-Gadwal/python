@@ -1,0 +1,51 @@
+map:- map function provide the facility to apply a function to each element to the given attribute and return the given list(attribute)
+      after modification.
+      map function returns the map object so we have to convert in into the required datastructure
+     
+     syntax:-  map(function,attribute,...)
+              example:- map(sqr,list1)      or   map(sqr,[10,20,30,40])  output=> [100,400,900,1600]
+     
+     
+     
+     
+
+ example 1):-
+              def calculate_cube(n):
+                    return n*n*n
+                    
+                lis1=(1,2,3,4,5)
+                res=map(calculate_cube,lis1)
+                print(res)                                output=> 0x0332848290 
+                
+                //to convert map object into square
+                convert_set=set(res)
+                print(convert_set)
+                        output => (1,8,27,64,125)
+                  
+                  
+                  
+               
+                  
+ example 2):-
+             num=(10,20,30,40,50)
+             cube=map(lambda x:x**3,num)
+             convert_cube=list(cube)
+             print(convert_cube)                  output=>[100,400,900,1600,2500]
+             
+             
+             
+             
+note:- we can pass multiple iteratores in map function;
+      
+      example 3):-
+                    num1=[10,20,30,40,50]
+                    num2=[100,200,300,400]
+                    result=map(lambda a,b:a+b, num1,num2)
+                    convert_res=lis(result)
+                    print(convert_res)           output=>[110,220,330,440,550]
+                    
+                    
+                    
+                    
+      
+      
