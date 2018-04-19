@@ -1,1 +1,9 @@
+re.compile(expr):- compile a regular expression pattern into regular expression object.
+
+
+search
+
+findall
+
+sub
 
